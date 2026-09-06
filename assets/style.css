@@ -412,9 +412,43 @@ footer {
   text-align: center;
   color: var(--muted);
   font-size: 0.85rem;
-  padding: 30px 20px 40px;
-  border-top: 1px solid var(--card-border);
-  margin-top: 40px;
+  padding: 34px 20px 20px;
+  margin-top: 50px;
+  background: linear-gradient(180deg, transparent, var(--purple-50));
+  position: relative;
+}
+
+footer::before {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 4px;
+  margin: 0 auto 20px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--purple-600), var(--pink-accent));
+}
+
+footer .footer-main {
+  color: var(--purple-900);
+  font-weight: 700;
+  font-size: 0.92rem;
+  margin-bottom: 6px;
+}
+
+footer .footer-credit {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  padding: 20px 0 24px;
+}
+
+footer .footer-credit svg {
+  width: 15px;
+  height: 15px;
+  color: var(--pink-accent);
+  flex: none;
 }
 
 /* ---------- Responsive ---------- */
