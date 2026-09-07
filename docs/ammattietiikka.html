@@ -173,94 +173,197 @@
   </ul>
 
   <h2>Osa 2: Tenttiharjoitus</h2>
-  <p class="subtitle">T&auml;ss&auml; osassa on kysymyksi&auml; koko aiheesta: oikein/v&auml;&auml;rin-v&auml;itt&auml;m&auml;t, aukkoteht&auml;v&auml;t ja monivalintakysymykset. K&auml;yt&auml; samoja sanoja kuin materiaalissa vastatessasi. Vastaukset l&ouml;ytyv&auml;t sivun lopusta &rdquo;N&auml;yt&auml; vastausavain&rdquo; -painikkeen takaa.</p>
+  <p class="subtitle">T&auml;ss&auml; osassa on kysymyksi&auml; koko aiheesta: oikein/v&auml;&auml;rin-v&auml;itt&auml;m&auml;t, aukkoteht&auml;v&auml;t ja monivalintakysymykset. Vastaa suoraan sivulla ja tarkista, kuinka moneen vastasit oikein. Jos vastaat v&auml;&auml;rin, oikea vastaus n&auml;ytet&auml;&auml;n heti. T&auml;ydellinen vastausavain perusteluineen l&ouml;ytyy my&ouml;s sivun lopusta.</p>
 
+  <div class="grand-check-bar">
+    <button type="button" class="btn check-all-btn">Tarkista koko tentti (A&ndash;C)</button>
+    <button type="button" class="btn secondary reset-all-btn">Tyhjenn&auml; koko tentti</button>
+    <span class="grand-result"></span>
+  </div>
+
+  <section class="exam-section" data-exam-section="A">
   <h3>A. Oikein vai v&auml;&auml;rin?</h3>
   <p class="subtitle">Merkitse, onko v&auml;itt&auml;m&auml; oikein (O) vai v&auml;&auml;rin (V).</p>
-  <div class="exam-item"><span class="qnum">1.</span> Ammattitaitovaatimuksiin kuuluu, ett&auml; ty&ouml;ntekij&auml; toimii ammattieettisten periaatteiden mukaisesti. &nbsp;&nbsp; O / V</div>
-  <div class="exam-item"><span class="qnum">2.</span> Hoitoty&ouml;ntekij&auml; saa toimia ty&ouml;ss&auml;&auml;n pelk&auml;st&auml;&auml;n omien henkil&ouml;kohtaisten arvojensa perusteella. &nbsp;&nbsp; O / V</div>
-  <div class="exam-item"><span class="qnum">3.</span> Etiikka antaa aina valmiin, yksiselitteisen vastauksen siihen, mik&auml; on oikein. &nbsp;&nbsp; O / V</div>
-  <div class="exam-item"><span class="qnum">4.</span> Seuraamusetiikassa kysyt&auml;&auml;n, mit&auml; pit&auml;&auml; tehd&auml;, jotta p&auml;&auml;st&auml;&auml;n toivottuun lopputulokseen. &nbsp;&nbsp; O / V</div>
-  <div class="exam-item"><span class="qnum">5.</span> Velvollisuusetiikka perustuu hoitajan velvollisuuksiin ja periaatteisiin. &nbsp;&nbsp; O / V</div>
-  <div class="exam-item"><span class="qnum">6.</span> Arvot eiv&auml;t voi koskaan muuttua el&auml;m&auml;n aikana. &nbsp;&nbsp; O / V</div>
-  <div class="exam-item"><span class="qnum">7.</span> L&auml;hihoitajan eettisiin periaatteisiin kuuluu ihmisarvon kunnioittaminen. &nbsp;&nbsp; O / V</div>
-  <div class="exam-item"><span class="qnum">8.</span> Salassapitovelvollisuus p&auml;&auml;ttyy heti, kun ty&ouml;suhde p&auml;&auml;ttyy. &nbsp;&nbsp; O / V</div>
-  <div class="exam-item"><span class="qnum">9.</span> Tietosuoja tarkoittaa henkil&ouml;n yksityisyyden suojaamista. &nbsp;&nbsp; O / V</div>
-  <div class="exam-item"><span class="qnum">10.</span> Laki kertoo aina yksiselitteisesti, mik&auml; on eettisesti oikein tai v&auml;&auml;rin. &nbsp;&nbsp; O / V</div>
-  <div class="exam-item"><span class="qnum">11.</span> Asiakkaalla on oikeus pyyt&auml;&auml; omien virheellisten tietojensa korjaamista. &nbsp;&nbsp; O / V</div>
-  <div class="exam-item"><span class="qnum">12.</span> YK:n lastenoikeuksien sopimus on solmittu vuonna 1989. &nbsp;&nbsp; O / V</div>
+  <div class="exam-item" data-type="tf" data-correct="O">
+    <span class="qnum">1.</span> Ammattitaitovaatimuksiin kuuluu, ett&auml; ty&ouml;ntekij&auml; toimii ammattieettisten periaatteiden mukaisesti.
+    <div class="tf-options">
+      <button type="button" class="tf-btn" data-value="O">Oikein</button>
+      <button type="button" class="tf-btn" data-value="V">V&auml;&auml;rin</button>
+    </div>
+  </div>
+  <div class="exam-item" data-type="tf" data-correct="V">
+    <span class="qnum">2.</span> Hoitoty&ouml;ntekij&auml; saa toimia ty&ouml;ss&auml;&auml;n pelk&auml;st&auml;&auml;n omien henkil&ouml;kohtaisten arvojensa perusteella.
+    <div class="tf-options">
+      <button type="button" class="tf-btn" data-value="O">Oikein</button>
+      <button type="button" class="tf-btn" data-value="V">V&auml;&auml;rin</button>
+    </div>
+  </div>
+  <div class="exam-item" data-type="tf" data-correct="V">
+    <span class="qnum">3.</span> Etiikka antaa aina valmiin, yksiselitteisen vastauksen siihen, mik&auml; on oikein.
+    <div class="tf-options">
+      <button type="button" class="tf-btn" data-value="O">Oikein</button>
+      <button type="button" class="tf-btn" data-value="V">V&auml;&auml;rin</button>
+    </div>
+  </div>
+  <div class="exam-item" data-type="tf" data-correct="O">
+    <span class="qnum">4.</span> Seuraamusetiikassa kysyt&auml;&auml;n, mit&auml; pit&auml;&auml; tehd&auml;, jotta p&auml;&auml;st&auml;&auml;n toivottuun lopputulokseen.
+    <div class="tf-options">
+      <button type="button" class="tf-btn" data-value="O">Oikein</button>
+      <button type="button" class="tf-btn" data-value="V">V&auml;&auml;rin</button>
+    </div>
+  </div>
+  <div class="exam-item" data-type="tf" data-correct="O">
+    <span class="qnum">5.</span> Velvollisuusetiikka perustuu hoitajan velvollisuuksiin ja periaatteisiin.
+    <div class="tf-options">
+      <button type="button" class="tf-btn" data-value="O">Oikein</button>
+      <button type="button" class="tf-btn" data-value="V">V&auml;&auml;rin</button>
+    </div>
+  </div>
+  <div class="exam-item" data-type="tf" data-correct="V">
+    <span class="qnum">6.</span> Arvot eiv&auml;t voi koskaan muuttua el&auml;m&auml;n aikana.
+    <div class="tf-options">
+      <button type="button" class="tf-btn" data-value="O">Oikein</button>
+      <button type="button" class="tf-btn" data-value="V">V&auml;&auml;rin</button>
+    </div>
+  </div>
+  <div class="exam-item" data-type="tf" data-correct="O">
+    <span class="qnum">7.</span> L&auml;hihoitajan eettisiin periaatteisiin kuuluu ihmisarvon kunnioittaminen.
+    <div class="tf-options">
+      <button type="button" class="tf-btn" data-value="O">Oikein</button>
+      <button type="button" class="tf-btn" data-value="V">V&auml;&auml;rin</button>
+    </div>
+  </div>
+  <div class="exam-item" data-type="tf" data-correct="V">
+    <span class="qnum">8.</span> Salassapitovelvollisuus p&auml;&auml;ttyy heti, kun ty&ouml;suhde p&auml;&auml;ttyy.
+    <div class="tf-options">
+      <button type="button" class="tf-btn" data-value="O">Oikein</button>
+      <button type="button" class="tf-btn" data-value="V">V&auml;&auml;rin</button>
+    </div>
+  </div>
+  <div class="exam-item" data-type="tf" data-correct="O">
+    <span class="qnum">9.</span> Tietosuoja tarkoittaa henkil&ouml;n yksityisyyden suojaamista.
+    <div class="tf-options">
+      <button type="button" class="tf-btn" data-value="O">Oikein</button>
+      <button type="button" class="tf-btn" data-value="V">V&auml;&auml;rin</button>
+    </div>
+  </div>
+  <div class="exam-item" data-type="tf" data-correct="V">
+    <span class="qnum">10.</span> Laki kertoo aina yksiselitteisesti, mik&auml; on eettisesti oikein tai v&auml;&auml;rin.
+    <div class="tf-options">
+      <button type="button" class="tf-btn" data-value="O">Oikein</button>
+      <button type="button" class="tf-btn" data-value="V">V&auml;&auml;rin</button>
+    </div>
+  </div>
+  <div class="exam-item" data-type="tf" data-correct="O">
+    <span class="qnum">11.</span> Asiakkaalla on oikeus pyyt&auml;&auml; omien virheellisten tietojensa korjaamista.
+    <div class="tf-options">
+      <button type="button" class="tf-btn" data-value="O">Oikein</button>
+      <button type="button" class="tf-btn" data-value="V">V&auml;&auml;rin</button>
+    </div>
+  </div>
+  <div class="exam-item" data-type="tf" data-correct="O">
+    <span class="qnum">12.</span> YK:n lastenoikeuksien sopimus on solmittu vuonna 1989.
+    <div class="tf-options">
+      <button type="button" class="tf-btn" data-value="O">Oikein</button>
+      <button type="button" class="tf-btn" data-value="V">V&auml;&auml;rin</button>
+    </div>
+  </div>
 
+  <div class="exam-actions">
+    <button type="button" class="btn check-btn">Tarkista osio A</button>
+    <button type="button" class="btn secondary reset-btn">Tyhjenn&auml; osio A</button>
+    <span class="section-result"></span>
+  </div>
+  </section>
+
+  <section class="exam-section" data-exam-section="B">
   <h3>B. T&auml;ydenn&auml; puuttuva sana (aukkoteht&auml;v&auml;)</h3>
-  <div class="exam-item"><span class="qnum">1.</span> Hoitoty&ouml;ntekij&auml; noudattaa lains&auml;&auml;d&auml;nt&ouml;&auml;, m&auml;&auml;r&auml;yksi&auml;, suosituksia ja <span class="blank"></span>.</div>
-  <div class="exam-item"><span class="qnum">2.</span> Ammatillinen osaaminen jaetaan kolmeen osaan: p&auml;&auml;, k&auml;si ja <span class="blank"></span>.</div>
-  <div class="exam-item"><span class="qnum">3.</span> Etiikka on <span class="blank"></span> n&auml;kemys oikeasta ja v&auml;&auml;r&auml;st&auml;.</div>
-  <div class="exam-item"><span class="qnum">4.</span> <span class="blank"></span>-etiikassa ty&ouml;ntekij&auml; ottaa vastuun siit&auml;, ett&auml; asiakkaan paras toteutuu.</div>
-  <div class="exam-item"><span class="qnum">5.</span> Arvo on arvokas, hyv&auml; ja <span class="blank"></span> pidetty asia.</div>
-  <div class="exam-item"><span class="qnum">6.</span> Ammatissa tulee noudattaa <span class="blank"></span> arvoja ja periaatteita, ei pelk&auml;st&auml;&auml;n henkil&ouml;kohtaisia.</div>
-  <div class="exam-item"><span class="qnum">7.</span> L&auml;hihoitajan eettisiin periaatteisiin kuuluvat mm. ihmisarvon kunnioittaminen, itsem&auml;&auml;r&auml;&auml;misoikeus, oikeudenmukaisuus, yhdenvertaisuus, vastuullisuus sek&auml; <span class="blank"></span> ja yhteisty&ouml;.</div>
-  <div class="exam-item"><span class="qnum">8.</span> YK:n ihmisoikeuksien yleismaailmallinen julistus on vuodelta <span class="blank"></span>.</div>
-  <div class="exam-item"><span class="qnum">9.</span> Laki potilaan oikeuksista on vuodelta <span class="blank"></span>.</div>
-  <div class="exam-item"><span class="qnum">10.</span> Ty&ouml;ntekij&auml; ei saa ilmaista sivullisille asiakkaan tietoja ilman <span class="blank"></span>.</div>
-  <div class="exam-item"><span class="qnum">11.</span> Tietosuoja on perusoikeus, joka turvaa henkil&ouml;n <span class="blank"></span> suojan.</div>
-  <div class="exam-item"><span class="qnum">12.</span> Asiakkaalla on oikeus tiet&auml;&auml;, mit&auml; <span class="blank"></span> organisaatiolla on h&auml;nest&auml;.</div>
+  <p class="subtitle">Kirjoita puuttuva sana kenttään. Isot/pienet kirjaimet eiv&auml;t vaikuta tarkistukseen.</p>
+  <div class="exam-item" data-type="fill" data-correct="ohjeita"><span class="qnum">1.</span> Hoitoty&ouml;ntekij&auml; noudattaa lains&auml;&auml;d&auml;nt&ouml;&auml;, m&auml;&auml;r&auml;yksi&auml;, suosituksia ja <input type="text" class="blank-input" autocomplete="off" spellcheck="false">.</div>
+  <div class="exam-item" data-type="fill" data-correct="syd&auml;n"><span class="qnum">2.</span> Ammatillinen osaaminen jaetaan kolmeen osaan: p&auml;&auml;, k&auml;si ja <input type="text" class="blank-input" autocomplete="off" spellcheck="false">.</div>
+  <div class="exam-item" data-type="fill" data-correct="perusteltu"><span class="qnum">3.</span> Etiikka on <input type="text" class="blank-input" autocomplete="off" spellcheck="false"> n&auml;kemys oikeasta ja v&auml;&auml;r&auml;st&auml;.</div>
+  <div class="exam-item" data-type="fill" data-correct="Hyve-etiikassa"><span class="qnum">4.</span> <input type="text" class="blank-input" autocomplete="off" spellcheck="false">-etiikassa ty&ouml;ntekij&auml; ottaa vastuun siit&auml;, ett&auml; asiakkaan paras toteutuu.</div>
+  <div class="exam-item" data-type="fill" data-correct="tavoiteltavana"><span class="qnum">5.</span> Arvo on arvokas, hyv&auml; ja <input type="text" class="blank-input" autocomplete="off" spellcheck="false"> pidetty asia.</div>
+  <div class="exam-item" data-type="fill" data-correct="yhteisi&auml;"><span class="qnum">6.</span> Ammatissa tulee noudattaa <input type="text" class="blank-input" autocomplete="off" spellcheck="false"> arvoja ja periaatteita, ei pelk&auml;st&auml;&auml;n henkil&ouml;kohtaisia.</div>
+  <div class="exam-item" data-type="fill" data-correct="ammatillisuus"><span class="qnum">7.</span> L&auml;hihoitajan eettisiin periaatteisiin kuuluvat mm. ihmisarvon kunnioittaminen, itsem&auml;&auml;r&auml;&auml;misoikeus, oikeudenmukaisuus, yhdenvertaisuus, vastuullisuus sek&auml; <input type="text" class="blank-input" autocomplete="off" spellcheck="false"> ja yhteisty&ouml;.</div>
+  <div class="exam-item" data-type="fill" data-correct="1948"><span class="qnum">8.</span> YK:n ihmisoikeuksien yleismaailmallinen julistus on vuodelta <input type="text" class="blank-input" autocomplete="off" spellcheck="false">.</div>
+  <div class="exam-item" data-type="fill" data-correct="1992"><span class="qnum">9.</span> Laki potilaan oikeuksista on vuodelta <input type="text" class="blank-input" autocomplete="off" spellcheck="false">.</div>
+  <div class="exam-item" data-type="fill" data-correct="lupaa"><span class="qnum">10.</span> Ty&ouml;ntekij&auml; ei saa ilmaista sivullisille asiakkaan tietoja ilman <input type="text" class="blank-input" autocomplete="off" spellcheck="false">.</div>
+  <div class="exam-item" data-type="fill" data-correct="yksityisyyden"><span class="qnum">11.</span> Tietosuoja on perusoikeus, joka turvaa henkil&ouml;n <input type="text" class="blank-input" autocomplete="off" spellcheck="false"> suojan.</div>
+  <div class="exam-item" data-type="fill" data-correct="henkil&ouml;tietoja"><span class="qnum">12.</span> Asiakkaalla on oikeus tiet&auml;&auml;, mit&auml; <input type="text" class="blank-input" autocomplete="off" spellcheck="false"> organisaatiolla on h&auml;nest&auml;.</div>
 
+  <div class="exam-actions">
+    <button type="button" class="btn check-btn">Tarkista osio B</button>
+    <button type="button" class="btn secondary reset-btn">Tyhjenn&auml; osio B</button>
+    <span class="section-result"></span>
+  </div>
+  </section>
+
+  <section class="exam-section" data-exam-section="C">
   <h3>C. Monivalinta (valitse oikea vaihtoehto)</h3>
-  <div class="exam-item">
+  <div class="exam-item" data-type="mcq" data-correct="b">
     <span class="qnum">1.</span> <b>Mik&auml; seuraavista kuuluu ammattitaitovaatimuksiin?</b>
-    <div class="mcq-opt">a) Toimitaan vain oman mielipiteen mukaan</div>
-    <div class="mcq-opt">b) Noudatetaan lains&auml;&auml;d&auml;nt&ouml;&auml;, m&auml;&auml;r&auml;yksi&auml;, suosituksia ja ohjeita</div>
-    <div class="mcq-opt">c) Asiakkaan itsem&auml;&auml;r&auml;&auml;misoikeutta ei tarvitse huomioida</div>
-    <div class="mcq-opt">d) Tietosuojaohjeet ovat vapaaehtoisia</div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c1" value="a"> a) Toimitaan vain oman mielipiteen mukaan</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c1" value="b"> b) Noudatetaan lains&auml;&auml;d&auml;nt&ouml;&auml;, m&auml;&auml;r&auml;yksi&auml;, suosituksia ja ohjeita</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c1" value="c"> c) Asiakkaan itsem&auml;&auml;r&auml;&auml;misoikeutta ei tarvitse huomioida</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c1" value="d"> d) Tietosuojaohjeet ovat vapaaehtoisia</label></div>
   </div>
-  <div class="exam-item">
+  <div class="exam-item" data-type="mcq" data-correct="c">
     <span class="qnum">2.</span> <b>Mik&auml; kuvaa &rdquo;syd&auml;n&rdquo;-osaamista p&auml;&auml;&ndash;k&auml;si&ndash;syd&auml;n-mallissa?</b>
-    <div class="mcq-opt">a) Teoreettinen tieto</div>
-    <div class="mcq-opt">b) K&auml;dentaidot</div>
-    <div class="mcq-opt">c) Empatia, tunne&auml;ly ja hoitoty&ouml;n eettinen osaaminen</div>
-    <div class="mcq-opt">d) N&auml;ytt&ouml;&ouml;n perustuva hoitoty&ouml;</div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c2" value="a"> a) Teoreettinen tieto</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c2" value="b"> b) K&auml;dentaidot</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c2" value="c"> c) Empatia, tunne&auml;ly ja hoitoty&ouml;n eettinen osaaminen</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c2" value="d"> d) N&auml;ytt&ouml;&ouml;n perustuva hoitoty&ouml;</label></div>
   </div>
-  <div class="exam-item">
+  <div class="exam-item" data-type="mcq" data-correct="a">
     <span class="qnum">3.</span> <b>Mik&auml; v&auml;itt&auml;m&auml; kuvaa seuraamusetiikkaa oikein?</b>
-    <div class="mcq-opt">a) Kysyt&auml;&auml;n, mit&auml; pit&auml;&auml; tehd&auml;, jotta p&auml;&auml;st&auml;&auml;n toivottuun lopputulokseen</div>
-    <div class="mcq-opt">b) Perustuu pelk&auml;st&auml;&auml;n hoitajan velvollisuuksiin</div>
-    <div class="mcq-opt">c) Ty&ouml;ntekij&auml; ottaa vastuun asiakkaan parhaasta</div>
-    <div class="mcq-opt">d) Ei liity etiikkaan lainkaan</div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c3" value="a"> a) Kysyt&auml;&auml;n, mit&auml; pit&auml;&auml; tehd&auml;, jotta p&auml;&auml;st&auml;&auml;n toivottuun lopputulokseen</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c3" value="b"> b) Perustuu pelk&auml;st&auml;&auml;n hoitajan velvollisuuksiin</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c3" value="c"> c) Ty&ouml;ntekij&auml; ottaa vastuun asiakkaan parhaasta</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c3" value="d"> d) Ei liity etiikkaan lainkaan</label></div>
   </div>
-  <div class="exam-item">
+  <div class="exam-item" data-type="mcq" data-correct="c">
     <span class="qnum">4.</span> <b>Mik&auml; seuraavista EI kuulu l&auml;hihoitajan eettisiin periaatteisiin?</b>
-    <div class="mcq-opt">a) Ihmisarvon kunnioittaminen</div>
-    <div class="mcq-opt">b) Yhdenvertaisuus</div>
-    <div class="mcq-opt">c) Voitontavoittelu</div>
-    <div class="mcq-opt">d) Vastuullisuus</div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c4" value="a"> a) Ihmisarvon kunnioittaminen</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c4" value="b"> b) Yhdenvertaisuus</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c4" value="c"> c) Voitontavoittelu</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c4" value="d"> d) Vastuullisuus</label></div>
   </div>
-  <div class="exam-item">
+  <div class="exam-item" data-type="mcq" data-correct="d">
     <span class="qnum">5.</span> <b>Milloin YK:n vammaisten henkil&ouml;iden oikeuksia koskeva sopimus solmittiin?</b>
-    <div class="mcq-opt">a) 1948</div>
-    <div class="mcq-opt">b) 1989</div>
-    <div class="mcq-opt">c) 1992</div>
-    <div class="mcq-opt">d) 2006</div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c5" value="a"> a) 1948</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c5" value="b"> b) 1989</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c5" value="c"> c) 1992</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c5" value="d"> d) 2006</label></div>
   </div>
-  <div class="exam-item">
+  <div class="exam-item" data-type="mcq" data-correct="b">
     <span class="qnum">6.</span> <b>Mit&auml; salassapitovelvollisuus tarkoittaa?</b>
-    <div class="mcq-opt">a) Tietoja saa kertoa kenelle tahansa, jos ne eiv&auml;t ole arkaluontoisia</div>
-    <div class="mcq-opt">b) Tietoja ei saa ilmaista sivullisille ilman lupaa, ja velvollisuus s&auml;ilyy ty&ouml;suhteen j&auml;lkeenkin</div>
-    <div class="mcq-opt">c) Salassapitovelvollisuus koskee vain l&auml;&auml;k&auml;reit&auml;</div>
-    <div class="mcq-opt">d) Salassapito p&auml;&auml;ttyy asiakassuhteen p&auml;&auml;ttyess&auml;</div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c6" value="a"> a) Tietoja saa kertoa kenelle tahansa, jos ne eiv&auml;t ole arkaluontoisia</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c6" value="b"> b) Tietoja ei saa ilmaista sivullisille ilman lupaa, ja velvollisuus s&auml;ilyy ty&ouml;suhteen j&auml;lkeenkin</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c6" value="c"> c) Salassapitovelvollisuus koskee vain l&auml;&auml;k&auml;reit&auml;</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c6" value="d"> d) Salassapito p&auml;&auml;ttyy asiakassuhteen p&auml;&auml;ttyess&auml;</label></div>
   </div>
-  <div class="exam-item">
+  <div class="exam-item" data-type="mcq" data-correct="c">
     <span class="qnum">7.</span> <b>Mik&auml; EI kuulu tietosuojaan sis&auml;ltyv&auml;&auml;n asiakkaan oikeuteen?</b>
-    <div class="mcq-opt">a) Oikeus tiet&auml;&auml;, mit&auml; henkil&ouml;tietoja organisaatiolla on</div>
-    <div class="mcq-opt">b) Oikeus pyyt&auml;&auml; virheellisten tietojen korjaamista</div>
-    <div class="mcq-opt">c) Oikeus p&auml;&auml;tt&auml;&auml; organisaation budjetista</div>
-    <div class="mcq-opt">d) Oikeus pyyt&auml;&auml; omien tietojen poistamista</div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c7" value="a"> a) Oikeus tiet&auml;&auml;, mit&auml; henkil&ouml;tietoja organisaatiolla on</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c7" value="b"> b) Oikeus pyyt&auml;&auml; virheellisten tietojen korjaamista</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c7" value="c"> c) Oikeus p&auml;&auml;tt&auml;&auml; organisaation budjetista</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c7" value="d"> d) Oikeus pyyt&auml;&auml; omien tietojen poistamista</label></div>
   </div>
-  <div class="exam-item">
+  <div class="exam-item" data-type="mcq" data-correct="a">
     <span class="qnum">8.</span> <b>Mik&auml; laki liittyy erityisesti potilaan ihmisarvoon, itsem&auml;&auml;r&auml;&auml;misoikeuteen ja hyv&auml;&auml;n kohteluun?</b>
-    <div class="mcq-opt">a) Laki potilaan oikeuksista (1992)</div>
-    <div class="mcq-opt">b) YK:n lastenoikeuksien sopimus</div>
-    <div class="mcq-opt">c) Laki sosiaalihuollon rahoituksesta</div>
-    <div class="mcq-opt">d) Tietosuoja-asetus yksin&auml;&auml;n</div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c8" value="a"> a) Laki potilaan oikeuksista (1992)</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c8" value="b"> b) YK:n lastenoikeuksien sopimus</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c8" value="c"> c) Laki sosiaalihuollon rahoituksesta</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="ammattietiikka-c8" value="d"> d) Tietosuoja-asetus yksin&auml;&auml;n</label></div>
   </div>
+
+  <div class="exam-actions">
+    <button type="button" class="btn check-btn">Tarkista osio C</button>
+    <button type="button" class="btn secondary reset-btn">Tyhjenn&auml; osio C</button>
+    <span class="section-result"></span>
+  </div>
+  </section>
 
   <h3>D. Lyhyet vastaukset / pohdintakysymykset</h3>
   <div class="exam-item"><span class="qnum">1.</span> Selit&auml; omin sanoin, mit&auml; tarkoittaa hyve-etiikka.</div>
@@ -341,5 +444,6 @@
   </p>
 </footer>
 
+<script src="../assets/exam.js"></script>
 </body>
 </html>

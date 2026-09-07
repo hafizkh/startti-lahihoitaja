@@ -234,96 +234,211 @@
   </ul>
 
   <h2>Osa 2: Tenttiharjoitus</h2>
-  <p class="subtitle">T&auml;ss&auml; osassa on kysymyksi&auml; koko aiheesta: oikein/v&auml;&auml;rin-v&auml;itt&auml;m&auml;t, aukkoteht&auml;v&auml;t ja monivalintakysymykset. K&auml;yt&auml; samoja sanoja kuin materiaalissa vastatessasi. Vastaukset l&ouml;ytyv&auml;t sivun lopusta &rdquo;N&auml;yt&auml; vastausavain&rdquo; -painikkeen takaa.</p>
+  <p class="subtitle">T&auml;ss&auml; osassa on kysymyksi&auml; koko aiheesta: oikein/v&auml;&auml;rin-v&auml;itt&auml;m&auml;t, aukkoteht&auml;v&auml;t ja monivalintakysymykset. Vastaa suoraan sivulla ja tarkista, kuinka moneen vastasit oikein. Jos vastaat v&auml;&auml;rin, oikea vastaus n&auml;ytet&auml;&auml;n heti. T&auml;ydellinen vastausavain perusteluineen l&ouml;ytyy my&ouml;s sivun lopusta.</p>
 
+  <div class="grand-check-bar">
+    <button type="button" class="btn check-all-btn">Tarkista koko tentti (A&ndash;C)</button>
+    <button type="button" class="btn secondary reset-all-btn">Tyhjenn&auml; koko tentti</button>
+    <span class="grand-result"></span>
+  </div>
+
+  <section class="exam-section" data-exam-section="A">
   <h3>A. Oikein vai v&auml;&auml;rin?</h3>
   <p class="subtitle">Merkitse, onko v&auml;itt&auml;m&auml; oikein (O) vai v&auml;&auml;rin (V).</p>
-  <div class="exam-item"><span class="qnum">1.</span> Aseptiikka tarkoittaa toimenpiteit&auml;, joilla yritet&auml;&auml;n est&auml;&auml; infektioita. &nbsp;&nbsp; O / V</div>
-  <div class="exam-item"><span class="qnum">2.</span> Hygienia tarkoittaa terveydenhoidon vaatimusten mukaista puhtautta. &nbsp;&nbsp; O / V</div>
-  <div class="exam-item"><span class="qnum">3.</span> Kosketustartunta on esimerkki v&auml;lit&ouml;m&auml;st&auml; (suorasta) tartunnasta. &nbsp;&nbsp; O / V</div>
-  <div class="exam-item"><span class="qnum">4.</span> K&auml;sihygienia on kaiken aseptisen toiminnan perusta. &nbsp;&nbsp; O / V</div>
-  <div class="exam-item"><span class="qnum">5.</span> K&auml;sien desinfektiohierontaan tarvitaan 3&ndash;5 millilitraa k&auml;sihuuhdetta ja k&auml;det hierotaan kuiviksi v&auml;hint&auml;&auml;n 30 sekunnin ajan. &nbsp;&nbsp; O / V</div>
-  <div class="exam-item"><span class="qnum">6.</span> Suojak&auml;sineit&auml; voi k&auml;ytt&auml;&auml; useamman potilaan hoitamiseen ilman vaihtamista. &nbsp;&nbsp; O / V</div>
-  <div class="exam-item"><span class="qnum">7.</span> Suojak&auml;sineet pest&auml;&auml;n ja desinfioidaan k&auml;yt&ouml;n j&auml;lkeen uudelleenk&auml;ytt&ouml;&auml; varten. &nbsp;&nbsp; O / V</div>
-  <div class="exam-item"><span class="qnum">8.</span> Aseptisessa ty&ouml;j&auml;rjestyksess&auml; likaisin ty&ouml; tehd&auml;&auml;n ensin ja puhtain viimeiseksi. &nbsp;&nbsp; O / V</div>
-  <div class="exam-item"><span class="qnum">9.</span> Taudit voivat tarttua p&auml;iv&auml;kodissa jo it&auml;misvaiheessa, ennen oireiden alkamista. &nbsp;&nbsp; O / V</div>
-  <div class="exam-item"><span class="qnum">10.</span> Kesken p&auml;iv&auml;n sairastunut lapsi voi j&auml;&auml;d&auml; p&auml;iv&auml;kotiin, jos hoitaja niin p&auml;&auml;tt&auml;&auml;. &nbsp;&nbsp; O / V</div>
-  <div class="exam-item"><span class="qnum">11.</span> Lapsi voi palata p&auml;iv&auml;kotiin heti, kun kuume laskee, vaikka olisi ollut kuumeeton vain muutaman tunnin. &nbsp;&nbsp; O / V</div>
-  <div class="exam-item"><span class="qnum">12.</span> Ruuan jakamiseen ja s&auml;ilytt&auml;miseen liittyv&auml;t ohjeet kuuluvat omavalvontaan. &nbsp;&nbsp; O / V</div>
-  <div class="exam-item"><span class="qnum">13.</span> Sormuksen alla voi olla satoja miljoonia mikrobeja. &nbsp;&nbsp; O / V</div>
-  <div class="exam-item"><span class="qnum">14.</span> Pitk&auml;t hiukset suositellaan pidett&auml;v&auml;n auki hoitoty&ouml;ss&auml;. &nbsp;&nbsp; O / V</div>
+  <div class="exam-item" data-type="tf" data-correct="O">
+    <span class="qnum">1.</span> Aseptiikka tarkoittaa toimenpiteit&auml;, joilla yritet&auml;&auml;n est&auml;&auml; infektioita.
+    <div class="tf-options">
+      <button type="button" class="tf-btn" data-value="O">Oikein</button>
+      <button type="button" class="tf-btn" data-value="V">V&auml;&auml;rin</button>
+    </div>
+  </div>
+  <div class="exam-item" data-type="tf" data-correct="O">
+    <span class="qnum">2.</span> Hygienia tarkoittaa terveydenhoidon vaatimusten mukaista puhtautta.
+    <div class="tf-options">
+      <button type="button" class="tf-btn" data-value="O">Oikein</button>
+      <button type="button" class="tf-btn" data-value="V">V&auml;&auml;rin</button>
+    </div>
+  </div>
+  <div class="exam-item" data-type="tf" data-correct="O">
+    <span class="qnum">3.</span> Kosketustartunta on esimerkki v&auml;lit&ouml;m&auml;st&auml; (suorasta) tartunnasta.
+    <div class="tf-options">
+      <button type="button" class="tf-btn" data-value="O">Oikein</button>
+      <button type="button" class="tf-btn" data-value="V">V&auml;&auml;rin</button>
+    </div>
+  </div>
+  <div class="exam-item" data-type="tf" data-correct="O">
+    <span class="qnum">4.</span> K&auml;sihygienia on kaiken aseptisen toiminnan perusta.
+    <div class="tf-options">
+      <button type="button" class="tf-btn" data-value="O">Oikein</button>
+      <button type="button" class="tf-btn" data-value="V">V&auml;&auml;rin</button>
+    </div>
+  </div>
+  <div class="exam-item" data-type="tf" data-correct="O">
+    <span class="qnum">5.</span> K&auml;sien desinfektiohierontaan tarvitaan 3&ndash;5 millilitraa k&auml;sihuuhdetta ja k&auml;det hierotaan kuiviksi v&auml;hint&auml;&auml;n 30 sekunnin ajan.
+    <div class="tf-options">
+      <button type="button" class="tf-btn" data-value="O">Oikein</button>
+      <button type="button" class="tf-btn" data-value="V">V&auml;&auml;rin</button>
+    </div>
+  </div>
+  <div class="exam-item" data-type="tf" data-correct="V">
+    <span class="qnum">6.</span> Suojak&auml;sineit&auml; voi k&auml;ytt&auml;&auml; useamman potilaan hoitamiseen ilman vaihtamista.
+    <div class="tf-options">
+      <button type="button" class="tf-btn" data-value="O">Oikein</button>
+      <button type="button" class="tf-btn" data-value="V">V&auml;&auml;rin</button>
+    </div>
+  </div>
+  <div class="exam-item" data-type="tf" data-correct="V">
+    <span class="qnum">7.</span> Suojak&auml;sineet pest&auml;&auml;n ja desinfioidaan k&auml;yt&ouml;n j&auml;lkeen uudelleenk&auml;ytt&ouml;&auml; varten.
+    <div class="tf-options">
+      <button type="button" class="tf-btn" data-value="O">Oikein</button>
+      <button type="button" class="tf-btn" data-value="V">V&auml;&auml;rin</button>
+    </div>
+  </div>
+  <div class="exam-item" data-type="tf" data-correct="V">
+    <span class="qnum">8.</span> Aseptisessa ty&ouml;j&auml;rjestyksess&auml; likaisin ty&ouml; tehd&auml;&auml;n ensin ja puhtain viimeiseksi.
+    <div class="tf-options">
+      <button type="button" class="tf-btn" data-value="O">Oikein</button>
+      <button type="button" class="tf-btn" data-value="V">V&auml;&auml;rin</button>
+    </div>
+  </div>
+  <div class="exam-item" data-type="tf" data-correct="O">
+    <span class="qnum">9.</span> Taudit voivat tarttua p&auml;iv&auml;kodissa jo it&auml;misvaiheessa, ennen oireiden alkamista.
+    <div class="tf-options">
+      <button type="button" class="tf-btn" data-value="O">Oikein</button>
+      <button type="button" class="tf-btn" data-value="V">V&auml;&auml;rin</button>
+    </div>
+  </div>
+  <div class="exam-item" data-type="tf" data-correct="V">
+    <span class="qnum">10.</span> Kesken p&auml;iv&auml;n sairastunut lapsi voi j&auml;&auml;d&auml; p&auml;iv&auml;kotiin, jos hoitaja niin p&auml;&auml;tt&auml;&auml;.
+    <div class="tf-options">
+      <button type="button" class="tf-btn" data-value="O">Oikein</button>
+      <button type="button" class="tf-btn" data-value="V">V&auml;&auml;rin</button>
+    </div>
+  </div>
+  <div class="exam-item" data-type="tf" data-correct="V">
+    <span class="qnum">11.</span> Lapsi voi palata p&auml;iv&auml;kotiin heti, kun kuume laskee, vaikka olisi ollut kuumeeton vain muutaman tunnin.
+    <div class="tf-options">
+      <button type="button" class="tf-btn" data-value="O">Oikein</button>
+      <button type="button" class="tf-btn" data-value="V">V&auml;&auml;rin</button>
+    </div>
+  </div>
+  <div class="exam-item" data-type="tf" data-correct="O">
+    <span class="qnum">12.</span> Ruuan jakamiseen ja s&auml;ilytt&auml;miseen liittyv&auml;t ohjeet kuuluvat omavalvontaan.
+    <div class="tf-options">
+      <button type="button" class="tf-btn" data-value="O">Oikein</button>
+      <button type="button" class="tf-btn" data-value="V">V&auml;&auml;rin</button>
+    </div>
+  </div>
+  <div class="exam-item" data-type="tf" data-correct="O">
+    <span class="qnum">13.</span> Sormuksen alla voi olla satoja miljoonia mikrobeja.
+    <div class="tf-options">
+      <button type="button" class="tf-btn" data-value="O">Oikein</button>
+      <button type="button" class="tf-btn" data-value="V">V&auml;&auml;rin</button>
+    </div>
+  </div>
+  <div class="exam-item" data-type="tf" data-correct="V">
+    <span class="qnum">14.</span> Pitk&auml;t hiukset suositellaan pidett&auml;v&auml;n auki hoitoty&ouml;ss&auml;.
+    <div class="tf-options">
+      <button type="button" class="tf-btn" data-value="O">Oikein</button>
+      <button type="button" class="tf-btn" data-value="V">V&auml;&auml;rin</button>
+    </div>
+  </div>
 
+  <div class="exam-actions">
+    <button type="button" class="btn check-btn">Tarkista osio A</button>
+    <button type="button" class="btn secondary reset-btn">Tyhjenn&auml; osio A</button>
+    <span class="section-result"></span>
+  </div>
+  </section>
+
+  <section class="exam-section" data-exam-section="B">
   <h3>B. T&auml;ydenn&auml; puuttuva sana (aukkoteht&auml;v&auml;)</h3>
-  <div class="exam-item"><span class="qnum">1.</span> <span class="blank"></span> tarkoittaa toimenpiteit&auml;, joilla yritet&auml;&auml;n est&auml;&auml; infektioita.</div>
-  <div class="exam-item"><span class="qnum">2.</span> Tartunnan voi aiheuttaa bakteeri, virus, sieni tai <span class="blank"></span>.</div>
-  <div class="exam-item"><span class="qnum">3.</span> <span class="blank"></span> tartunta tarkoittaa, ett&auml; bakteerit ja virukset siirtyv&auml;t suoraan henkil&ouml;st&auml; toiseen.</div>
-  <div class="exam-item"><span class="qnum">4.</span> K&auml;sien desinfektiohierontaan tarvitaan 3&ndash;5 millilitraa k&auml;sihuuhdetta, ja k&auml;siä hierotaan kuiviksi v&auml;hint&auml;&auml;n <span class="blank"></span> sekunnin ajan.</div>
-  <div class="exam-item"><span class="qnum">5.</span> K&auml;det pest&auml;&auml;n l&auml;mpim&auml;ll&auml; vedell&auml; ja <span class="blank"></span> saippualla.</div>
-  <div class="exam-item"><span class="qnum">6.</span> Suojak&auml;sineet ovat aina <span class="blank"></span> ja potilaskohtaiset.</div>
-  <div class="exam-item"><span class="qnum">7.</span> Aseptisessa ty&ouml;j&auml;rjestyksess&auml; <span class="blank"></span> ty&ouml; tehd&auml;&auml;n ensin ja likaisin viimeiseksi.</div>
-  <div class="exam-item"><span class="qnum">8.</span> Lapsi voi palata varhaiskasvatukseen kuumeisen taudin j&auml;lkeen, kun on ollut kuumeeton v&auml;hint&auml;&auml;n <span class="blank"></span> vuorokauden ajan.</div>
-  <div class="exam-item"><span class="qnum">9.</span> Ruuan jakamiseen ja s&auml;ilytt&auml;miseen liittyvi&auml; ohjeita kutsutaan nimell&auml; <span class="blank"></span>.</div>
-  <div class="exam-item"><span class="qnum">10.</span> K&auml;det desinfioidaan alkoholipohjaisella <span class="blank"></span>.</div>
-  <div class="exam-item"><span class="qnum">11.</span> Aseptiikka on t&auml;rke&auml;&auml; kaikissa <span class="blank"></span> ty&ouml;yksik&ouml;iss&auml;.</div>
-  <div class="exam-item"><span class="qnum">12.</span> P&auml;iv&auml;kodissa yksi tartuntatapa on sylkikontakti, esimerkiksi sama lusikka tai <span class="blank"></span>.</div>
+  <p class="subtitle">Kirjoita puuttuva sana kenttään. Isot/pienet kirjaimet eiv&auml;t vaikuta tarkistukseen.</p>
+  <div class="exam-item" data-type="fill" data-correct="Aseptiikka"><span class="qnum">1.</span> <input type="text" class="blank-input" autocomplete="off" spellcheck="false"> tarkoittaa toimenpiteit&auml;, joilla yritet&auml;&auml;n est&auml;&auml; infektioita.</div>
+  <div class="exam-item" data-type="fill" data-correct="parasiitti"><span class="qnum">2.</span> Tartunnan voi aiheuttaa bakteeri, virus, sieni tai <input type="text" class="blank-input" autocomplete="off" spellcheck="false">.</div>
+  <div class="exam-item" data-type="fill" data-correct="V&auml;lit&ouml;n" data-alt="suora"><span class="qnum">3.</span> <input type="text" class="blank-input" autocomplete="off" spellcheck="false"> tartunta tarkoittaa, ett&auml; bakteerit ja virukset siirtyv&auml;t suoraan henkil&ouml;st&auml; toiseen.</div>
+  <div class="exam-item" data-type="fill" data-correct="30"><span class="qnum">4.</span> K&auml;sien desinfektiohierontaan tarvitaan 3&ndash;5 millilitraa k&auml;sihuuhdetta, ja k&auml;siä hierotaan kuiviksi v&auml;hint&auml;&auml;n <input type="text" class="blank-input" autocomplete="off" spellcheck="false"> sekunnin ajan.</div>
+  <div class="exam-item" data-type="fill" data-correct="nestem&auml;isell&auml;"><span class="qnum">5.</span> K&auml;det pest&auml;&auml;n l&auml;mpim&auml;ll&auml; vedell&auml; ja <input type="text" class="blank-input" autocomplete="off" spellcheck="false"> saippualla.</div>
+  <div class="exam-item" data-type="fill" data-correct="kertak&auml;ytt&ouml;iset"><span class="qnum">6.</span> Suojak&auml;sineet ovat aina <input type="text" class="blank-input" autocomplete="off" spellcheck="false"> ja potilaskohtaiset.</div>
+  <div class="exam-item" data-type="fill" data-correct="puhtain"><span class="qnum">7.</span> Aseptisessa ty&ouml;j&auml;rjestyksess&auml; <input type="text" class="blank-input" autocomplete="off" spellcheck="false"> ty&ouml; tehd&auml;&auml;n ensin ja likaisin viimeiseksi.</div>
+  <div class="exam-item" data-type="fill" data-correct="1" data-alt="yksi|yhden"><span class="qnum">8.</span> Lapsi voi palata varhaiskasvatukseen kuumeisen taudin j&auml;lkeen, kun on ollut kuumeeton v&auml;hint&auml;&auml;n <input type="text" class="blank-input" autocomplete="off" spellcheck="false"> vuorokauden ajan.</div>
+  <div class="exam-item" data-type="fill" data-correct="omavalvonta"><span class="qnum">9.</span> Ruuan jakamiseen ja s&auml;ilytt&auml;miseen liittyvi&auml; ohjeita kutsutaan nimell&auml; <input type="text" class="blank-input" autocomplete="off" spellcheck="false">.</div>
+  <div class="exam-item" data-type="fill" data-correct="k&auml;sihuuhteella"><span class="qnum">10.</span> K&auml;det desinfioidaan alkoholipohjaisella <input type="text" class="blank-input" autocomplete="off" spellcheck="false">.</div>
+  <div class="exam-item" data-type="fill" data-correct="hoitoalan"><span class="qnum">11.</span> Aseptiikka on t&auml;rke&auml;&auml; kaikissa <input type="text" class="blank-input" autocomplete="off" spellcheck="false"> ty&ouml;yksik&ouml;iss&auml;.</div>
+  <div class="exam-item" data-type="fill" data-correct="tutti"><span class="qnum">12.</span> P&auml;iv&auml;kodissa yksi tartuntatapa on sylkikontakti, esimerkiksi sama lusikka tai <input type="text" class="blank-input" autocomplete="off" spellcheck="false">.</div>
 
+  <div class="exam-actions">
+    <button type="button" class="btn check-btn">Tarkista osio B</button>
+    <button type="button" class="btn secondary reset-btn">Tyhjenn&auml; osio B</button>
+    <span class="section-result"></span>
+  </div>
+  </section>
+
+  <section class="exam-section" data-exam-section="C">
   <h3>C. Monivalinta (valitse oikea vaihtoehto)</h3>
-  <div class="exam-item">
+  <div class="exam-item" data-type="mcq" data-correct="b">
     <span class="qnum">1.</span> <b>Mik&auml; on aseptiikan m&auml;&auml;ritelm&auml;?</b>
-    <div class="mcq-opt">a) Terveydenhoidon vaatimusten mukainen puhtaus</div>
-    <div class="mcq-opt">b) Toimenpiteet, joilla yritet&auml;&auml;n est&auml;&auml; infektioita</div>
-    <div class="mcq-opt">c) L&auml;&auml;kkeiden antaminen potilaalle</div>
-    <div class="mcq-opt">d) Ruokailuv&auml;lineiden pesu</div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c1" value="a"> a) Terveydenhoidon vaatimusten mukainen puhtaus</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c1" value="b"> b) Toimenpiteet, joilla yritet&auml;&auml;n est&auml;&auml; infektioita</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c1" value="c"> c) L&auml;&auml;kkeiden antaminen potilaalle</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c1" value="d"> d) Ruokailuv&auml;lineiden pesu</label></div>
   </div>
-  <div class="exam-item">
+  <div class="exam-item" data-type="mcq" data-correct="b">
     <span class="qnum">2.</span> <b>Mik&auml; seuraavista on esimerkki v&auml;lillisest&auml; (ep&auml;suorasta) tartunnasta?</b>
-    <div class="mcq-opt">a) Iholta limakalvolle suoraan siirtyv&auml; tartunta</div>
-    <div class="mcq-opt">b) Ovenkahvan koskettamisen kautta siirtyv&auml; tartunta</div>
-    <div class="mcq-opt">c) Tartunta, joka ei koskaan leviä ihmisest&auml; toiseen</div>
-    <div class="mcq-opt">d) Aseptinen ty&ouml;j&auml;rjestys</div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c2" value="a"> a) Iholta limakalvolle suoraan siirtyv&auml; tartunta</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c2" value="b"> b) Ovenkahvan koskettamisen kautta siirtyv&auml; tartunta</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c2" value="c"> c) Tartunta, joka ei koskaan leviä ihmisest&auml; toiseen</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c2" value="d"> d) Aseptinen ty&ouml;j&auml;rjestys</label></div>
   </div>
-  <div class="exam-item">
+  <div class="exam-item" data-type="mcq" data-correct="b">
     <span class="qnum">3.</span> <b>Milloin k&auml;det tulee ehdottomasti pest&auml; saippualla eik&auml; pelk&auml;ll&auml; k&auml;sihuuhteella?</b>
-    <div class="mcq-opt">a) Kun k&auml;dess&auml; on sormus</div>
-    <div class="mcq-opt">b) Kun k&auml;det ovat n&auml;kyv&auml;sti likaiset</div>
-    <div class="mcq-opt">c) Ennen huoneeseen menoa aina ilman poikkeusta</div>
-    <div class="mcq-opt">d) Vain ty&ouml;p&auml;iv&auml;n alussa</div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c3" value="a"> a) Kun k&auml;dess&auml; on sormus</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c3" value="b"> b) Kun k&auml;det ovat n&auml;kyv&auml;sti likaiset</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c3" value="c"> c) Ennen huoneeseen menoa aina ilman poikkeusta</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c3" value="d"> d) Vain ty&ouml;p&auml;iv&auml;n alussa</label></div>
   </div>
-  <div class="exam-item">
+  <div class="exam-item" data-type="mcq" data-correct="a">
     <span class="qnum">4.</span> <b>Mik&auml; v&auml;itt&auml;m&auml; suojak&auml;sineist&auml; on oikein?</b>
-    <div class="mcq-opt">a) Ne ovat aina kertak&auml;ytt&ouml;iset ja potilaskohtaiset</div>
-    <div class="mcq-opt">b) Ne voi pest&auml; ja k&auml;ytt&auml;&auml; uudelleen</div>
-    <div class="mcq-opt">c) K&auml;siä ei tarvitse desinfioida, jos k&auml;ytt&auml;&auml; hanskoja</div>
-    <div class="mcq-opt">d) Niit&auml; voi laittaa useamman parin p&auml;&auml;llekk&auml;in lis&auml;suojaksi</div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c4" value="a"> a) Ne ovat aina kertak&auml;ytt&ouml;iset ja potilaskohtaiset</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c4" value="b"> b) Ne voi pest&auml; ja k&auml;ytt&auml;&auml; uudelleen</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c4" value="c"> c) K&auml;siä ei tarvitse desinfioida, jos k&auml;ytt&auml;&auml; hanskoja</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c4" value="d"> d) Niit&auml; voi laittaa useamman parin p&auml;&auml;llekk&auml;in lis&auml;suojaksi</label></div>
   </div>
-  <div class="exam-item">
+  <div class="exam-item" data-type="mcq" data-correct="b">
     <span class="qnum">5.</span> <b>Mit&auml; tarkoittaa aseptinen ty&ouml;j&auml;rjestys?</b>
-    <div class="mcq-opt">a) Ty&ouml;t tehd&auml;&auml;n sattumanvaraisessa j&auml;rjestyksess&auml;</div>
-    <div class="mcq-opt">b) Puhtain ty&ouml; tehd&auml;&auml;n ensin ja likaisin viimeiseksi</div>
-    <div class="mcq-opt">c) Likaisin ty&ouml; tehd&auml;&auml;n aina ensin</div>
-    <div class="mcq-opt">d) J&auml;rjestyksell&auml; ei ole merkityst&auml; tartuntojen kannalta</div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c5" value="a"> a) Ty&ouml;t tehd&auml;&auml;n sattumanvaraisessa j&auml;rjestyksess&auml;</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c5" value="b"> b) Puhtain ty&ouml; tehd&auml;&auml;n ensin ja likaisin viimeiseksi</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c5" value="c"> c) Likaisin ty&ouml; tehd&auml;&auml;n aina ensin</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c5" value="d"> d) J&auml;rjestyksell&auml; ei ole merkityst&auml; tartuntojen kannalta</label></div>
   </div>
-  <div class="exam-item">
+  <div class="exam-item" data-type="mcq" data-correct="b">
     <span class="qnum">6.</span> <b>Miksi lapset sairastavat p&auml;iv&auml;kodissa enemm&auml;n kuin kotihoidossa?</b>
-    <div class="mcq-opt">a) P&auml;iv&auml;kodin ruoka on huonompaa</div>
-    <div class="mcq-opt">b) Lapsia on paljon samassa tilassa ja taudit tarttuvat helposti mm. yhteisist&auml; leluista ja pinnoista</div>
-    <div class="mcq-opt">c) P&auml;iv&auml;kodeissa ei ole koskaan hygieniaohjeita</div>
-    <div class="mcq-opt">d) Kotihoidossa lapset eiv&auml;t koskaan sairastu</div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c6" value="a"> a) P&auml;iv&auml;kodin ruoka on huonompaa</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c6" value="b"> b) Lapsia on paljon samassa tilassa ja taudit tarttuvat helposti mm. yhteisist&auml; leluista ja pinnoista</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c6" value="c"> c) P&auml;iv&auml;kodeissa ei ole koskaan hygieniaohjeita</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c6" value="d"> d) Kotihoidossa lapset eiv&auml;t koskaan sairastu</label></div>
   </div>
-  <div class="exam-item">
+  <div class="exam-item" data-type="mcq" data-correct="b">
     <span class="qnum">7.</span> <b>Milloin sairastunut lapsi voi yleens&auml; palata varhaiskasvatukseen kuumeisen taudin j&auml;lkeen?</b>
-    <div class="mcq-opt">a) Heti kun kuume alkaa laskea</div>
-    <div class="mcq-opt">b) Kun on ollut kuumeeton v&auml;hint&auml;&auml;n 1 vuorokauden ajan ja jaksaa osallistua toimintaan</div>
-    <div class="mcq-opt">c) Kun vanhemmat niin p&auml;&auml;tt&auml;v&auml;t riippumatta oireista</div>
-    <div class="mcq-opt">d) Vasta viikon kuluttua aina samalla tavalla riippumatta taudista</div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c7" value="a"> a) Heti kun kuume alkaa laskea</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c7" value="b"> b) Kun on ollut kuumeeton v&auml;hint&auml;&auml;n 1 vuorokauden ajan ja jaksaa osallistua toimintaan</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c7" value="c"> c) Kun vanhemmat niin p&auml;&auml;tt&auml;v&auml;t riippumatta oireista</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c7" value="d"> d) Vasta viikon kuluttua aina samalla tavalla riippumatta taudista</label></div>
   </div>
-  <div class="exam-item">
+  <div class="exam-item" data-type="mcq" data-correct="b">
     <span class="qnum">8.</span> <b>Mik&auml; kuuluu aseptiikkaan kuuluviin toimintatapoihin?</b>
-    <div class="mcq-opt">a) Vain k&auml;sihygienia</div>
-    <div class="mcq-opt">b) K&auml;sihygienia, elintarvikehygienia, ymp&auml;rist&ouml;n puhtaanapito ja suojav&auml;lineiden k&auml;ytt&ouml;</div>
-    <div class="mcq-opt">c) Vain ruokailuun liittyv&auml;t asiat</div>
-    <div class="mcq-opt">d) Vain v&auml;lineiden sterilointi</div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c8" value="a"> a) Vain k&auml;sihygienia</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c8" value="b"> b) K&auml;sihygienia, elintarvikehygienia, ymp&auml;rist&ouml;n puhtaanapito ja suojav&auml;lineiden k&auml;ytt&ouml;</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c8" value="c"> c) Vain ruokailuun liittyv&auml;t asiat</label></div>
+    <div class="mcq-opt"><label><input type="radio" name="hygienia-c8" value="d"> d) Vain v&auml;lineiden sterilointi</label></div>
   </div>
+
+  <div class="exam-actions">
+    <button type="button" class="btn check-btn">Tarkista osio C</button>
+    <button type="button" class="btn secondary reset-btn">Tyhjenn&auml; osio C</button>
+    <span class="section-result"></span>
+  </div>
+  </section>
 
   <h3>D. Lyhyet vastaukset / pohdintakysymykset</h3>
   <div class="exam-item"><span class="qnum">1.</span> Selit&auml; omin sanoin ero aseptiikan ja hygienian v&auml;lill&auml;.</div>
@@ -406,5 +521,6 @@
   </p>
 </footer>
 
+<script src="../assets/exam.js"></script>
 </body>
 </html>
